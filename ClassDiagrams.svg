@@ -1,0 +1,166 @@
+<svg version="1.1" baseProfile="full" width="1309.0" height="614.0" viewbox="0 0 1309 614" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
+<desc >#.interface: fill=lightblue
+#.enumeration: fill=lightgreen
+#.type: fill=lightgray
+[Clock|-static instances: Clock\[\];-static displayPixelWidth: 150;-static displayPixelHeight: 40;-static displayBorderPixelThickness: 2;-static buttonPixelWidth: 10;-static buttonPixelHeight: 10;-static backgroundPixelSize: 166;-static backgroundBorderPixelThickness: 2;-static divPixelWidth: number;-static divPixelHeight: number;-static updateFrameRate: 8;-static intervalId: Timer;-UTCminuteOffset: number;-editModeIndex: number;-userHourOffset: number;-userMinuteOffset: number;-lightFlag: boolean;-AM_PM_flag: boolean;-animations: TwoDanimation\[\];-index: number|+static Create(): number;+static addAnimation(): void;-static getRightButtonX(): number;-static getTopButtonY(): number;-static getBottomButtonY(): number;-static updateAllInstances(): void;-getDivId(): string;-update(): void;-pushEditModeButton(): void;-pushIncreaseButton(): void;-pushLightButton(): void;-pushResetButton(): void;-pushHourFormatButton(): void]
+[TwoDanimation|-type: number;-relativeToPoint: TwoDvector;-startValue: TwoDvector;-endValue: TwoDvector;-timeOffset: number;-duration: number|+static applyTo(): void;-getMatrix(): TwoDmatrix]
+[TwoDmatrix|-a: number\[\]\[\]|+static getIdentity(): TwoDmatrix;+static getTranslation(): TwoDmatrix;+static getCircularTranslation(): TwoDmatrix;+static getHomothety(): TwoDmatrix;+static getRotation(): TwoDmatrix;+multiplyBy(): TwoDmatrix;+applyTransformTo(): void]
+[TwoDvector|-x: number;-y: number|+getX(): number;+getY(): number;+getNorm(): number]</desc>
+<g stroke-width="1.0" text-align="left" font="12pt Helvetica, Arial, sans-serif" font-size="12pt" font-family="Helvetica" font-weight="normal" font-style="normal">
+<g font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round" stroke="#33322E">
+<g stroke="transparent" fill="transparent">
+<rect x="0.0" y="0.0" height="614.0" width="1309.0" stroke="none"></rect>
+</g>
+<g transform="translate(8, 8)" fill="#33322E">
+<g transform="translate(20, 20)">
+<g data-name="Clock">
+<g fill="#eee8d5" stroke="#33322E" data-name="Clock">
+<rect x="0.0" y="0.0" height="558.0" width="354.0" data-name="Clock"></rect>
+<path d="M0.0 31.0 L354.0 31.0" fill="none" data-name="Clock"></path>
+<path d="M0.0 347.0 L354.0 347.0" fill="none" data-name="Clock"></path>
+</g>
+<g transform="translate(0, 0)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Clock">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Clock">
+<a id="src\Clock\Clock.ts.Clock" xlink:href="src\Clock\Clock.ts"><text x="169.0" y="13.5" stroke="none" text-anchor="middle" data-name="Clock">Clock</text></a>
+
+</g>
+</g>
+<g transform="translate(0, 31)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Clock">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Clock">
+<text x="0.0" y="13.5" stroke="none" data-name="Clock">-static instances: Clock[]</text>
+<text x="0.0" y="28.5" stroke="none" data-name="Clock">-static displayPixelWidth: 150</text>
+<text x="0.0" y="43.5" stroke="none" data-name="Clock">-static displayPixelHeight: 40</text>
+<text x="0.0" y="58.5" stroke="none" data-name="Clock">-static displayBorderPixelThickness: 2</text>
+<text x="0.0" y="73.5" stroke="none" data-name="Clock">-static buttonPixelWidth: 10</text>
+<text x="0.0" y="88.5" stroke="none" data-name="Clock">-static buttonPixelHeight: 10</text>
+<text x="0.0" y="103.5" stroke="none" data-name="Clock">-static backgroundPixelSize: 166</text>
+<text x="0.0" y="118.5" stroke="none" data-name="Clock">-static backgroundBorderPixelThickness: 2</text>
+<text x="0.0" y="133.5" stroke="none" data-name="Clock">-static divPixelWidth: number</text>
+<text x="0.0" y="148.5" stroke="none" data-name="Clock">-static divPixelHeight: number</text>
+<text x="0.0" y="163.5" stroke="none" data-name="Clock">-static updateFrameRate: 8</text>
+<text x="0.0" y="178.5" stroke="none" data-name="Clock">-static intervalId: Timer</text>
+<text x="0.0" y="193.5" stroke="none" data-name="Clock">-UTCminuteOffset: number</text>
+<text x="0.0" y="208.5" stroke="none" data-name="Clock">-editModeIndex: number</text>
+<text x="0.0" y="223.5" stroke="none" data-name="Clock">-userHourOffset: number</text>
+<text x="0.0" y="238.5" stroke="none" data-name="Clock">-userMinuteOffset: number</text>
+<text x="0.0" y="253.5" stroke="none" data-name="Clock">-lightFlag: boolean</text>
+<text x="0.0" y="268.5" stroke="none" data-name="Clock">-AM_PM_flag: boolean</text>
+<text x="0.0" y="283.5" stroke="none" data-name="Clock">-animations: TwoDanimation[]</text>
+<text x="0.0" y="298.5" stroke="none" data-name="Clock">-index: number</text>
+
+</g>
+</g>
+<g transform="translate(0, 347)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Clock">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Clock">
+<text x="0.0" y="13.5" stroke="none" data-name="Clock">+static Create(): number</text>
+<text x="0.0" y="28.5" stroke="none" data-name="Clock">+static addAnimation(): void</text>
+<text x="0.0" y="43.5" stroke="none" data-name="Clock">-static getRightButtonX(): number</text>
+<text x="0.0" y="58.5" stroke="none" data-name="Clock">-static getTopButtonY(): number</text>
+<text x="0.0" y="73.5" stroke="none" data-name="Clock">-static getBottomButtonY(): number</text>
+<text x="0.0" y="88.5" stroke="none" data-name="Clock">-static updateAllInstances(): void</text>
+<text x="0.0" y="103.5" stroke="none" data-name="Clock">-getDivId(): string</text>
+<text x="0.0" y="118.5" stroke="none" data-name="Clock">-update(): void</text>
+<text x="0.0" y="133.5" stroke="none" data-name="Clock">-pushEditModeButton(): void</text>
+<text x="0.0" y="148.5" stroke="none" data-name="Clock">-pushIncreaseButton(): void</text>
+<text x="0.0" y="163.5" stroke="none" data-name="Clock">-pushLightButton(): void</text>
+<text x="0.0" y="178.5" stroke="none" data-name="Clock">-pushResetButton(): void</text>
+<text x="0.0" y="193.5" stroke="none" data-name="Clock">-pushHourFormatButton(): void</text>
+
+</g>
+</g>
+</g>
+<g data-name="TwoDanimation">
+<g fill="#eee8d5" stroke="#33322E" data-name="TwoDanimation">
+<rect x="394.0" y="187.5" height="183.0" width="243.0" data-name="TwoDanimation"></rect>
+<path d="M394.0 218.5 L637.0 218.5" fill="none" data-name="TwoDanimation"></path>
+<path d="M394.0 324.5 L637.0 324.5" fill="none" data-name="TwoDanimation"></path>
+</g>
+<g transform="translate(394, 187.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="TwoDanimation">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="TwoDanimation">
+<a id="src\TwoDanimation\TwoDanimation.ts.TwoDanimation" xlink:href="src\TwoDanimation\TwoDanimation.ts"><text x="113.5" y="13.5" stroke="none" text-anchor="middle" data-name="TwoDanimation">TwoDanimation</text></a>
+
+</g>
+</g>
+<g transform="translate(394, 218.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TwoDanimation">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="TwoDanimation">
+<text x="0.0" y="13.5" stroke="none" data-name="TwoDanimation">-type: number</text>
+<text x="0.0" y="28.5" stroke="none" data-name="TwoDanimation">-relativeToPoint: TwoDvector</text>
+<text x="0.0" y="43.5" stroke="none" data-name="TwoDanimation">-startValue: TwoDvector</text>
+<text x="0.0" y="58.5" stroke="none" data-name="TwoDanimation">-endValue: TwoDvector</text>
+<text x="0.0" y="73.5" stroke="none" data-name="TwoDanimation">-timeOffset: number</text>
+<text x="0.0" y="88.5" stroke="none" data-name="TwoDanimation">-duration: number</text>
+
+</g>
+</g>
+<g transform="translate(394, 324.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TwoDanimation">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="TwoDanimation">
+<text x="0.0" y="13.5" stroke="none" data-name="TwoDanimation">+static applyTo(): void</text>
+<text x="0.0" y="28.5" stroke="none" data-name="TwoDanimation">-getMatrix(): TwoDmatrix</text>
+
+</g>
+</g>
+</g>
+<g data-name="TwoDmatrix">
+<g fill="#eee8d5" stroke="#33322E" data-name="TwoDmatrix">
+<rect x="677.0" y="187.5" height="183.0" width="361.0" data-name="TwoDmatrix"></rect>
+<path d="M677.0 218.5 L1038.0 218.5" fill="none" data-name="TwoDmatrix"></path>
+<path d="M677.0 249.5 L1038.0 249.5" fill="none" data-name="TwoDmatrix"></path>
+</g>
+<g transform="translate(677, 187.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="TwoDmatrix">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="TwoDmatrix">
+<a id="src\TwoDmatrix\TwoDmatrix.ts.TwoDmatrix" xlink:href="src\TwoDmatrix\TwoDmatrix.ts"><text x="172.5" y="13.5" stroke="none" text-anchor="middle" data-name="TwoDmatrix">TwoDmatrix</text></a>
+
+</g>
+</g>
+<g transform="translate(677, 218.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TwoDmatrix">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="TwoDmatrix">
+<text x="0.0" y="13.5" stroke="none" data-name="TwoDmatrix">-a: number[][]</text>
+
+</g>
+</g>
+<g transform="translate(677, 249.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TwoDmatrix">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="TwoDmatrix">
+<text x="0.0" y="13.5" stroke="none" data-name="TwoDmatrix">+static getIdentity(): TwoDmatrix</text>
+<text x="0.0" y="28.5" stroke="none" data-name="TwoDmatrix">+static getTranslation(): TwoDmatrix</text>
+<text x="0.0" y="43.5" stroke="none" data-name="TwoDmatrix">+static getCircularTranslation(): TwoDmatrix</text>
+<text x="0.0" y="58.5" stroke="none" data-name="TwoDmatrix">+static getHomothety(): TwoDmatrix</text>
+<text x="0.0" y="73.5" stroke="none" data-name="TwoDmatrix">+static getRotation(): TwoDmatrix</text>
+<text x="0.0" y="88.5" stroke="none" data-name="TwoDmatrix">+multiplyBy(): TwoDmatrix</text>
+<text x="0.0" y="103.5" stroke="none" data-name="TwoDmatrix">+applyTransformTo(): void</text>
+
+</g>
+</g>
+</g>
+<g data-name="TwoDvector">
+<g fill="#eee8d5" stroke="#33322E" data-name="TwoDvector">
+<rect x="1078.0" y="210.0" height="138.0" width="175.0" data-name="TwoDvector"></rect>
+<path d="M1078.0 241.0 L1253.0 241.0" fill="none" data-name="TwoDvector"></path>
+<path d="M1078.0 287.0 L1253.0 287.0" fill="none" data-name="TwoDvector"></path>
+</g>
+<g transform="translate(1078, 210)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="TwoDvector">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="TwoDvector">
+<a id="src\TwoDvector\TwoDvector.ts.TwoDvector" xlink:href="src\TwoDvector\TwoDvector.ts"><text x="79.5" y="13.5" stroke="none" text-anchor="middle" data-name="TwoDvector">TwoDvector</text></a>
+
+</g>
+</g>
+<g transform="translate(1078, 241)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TwoDvector">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="TwoDvector">
+<text x="0.0" y="13.5" stroke="none" data-name="TwoDvector">-x: number</text>
+<text x="0.0" y="28.5" stroke="none" data-name="TwoDvector">-y: number</text>
+
+</g>
+</g>
+<g transform="translate(1078, 287)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TwoDvector">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="TwoDvector">
+<text x="0.0" y="13.5" stroke="none" data-name="TwoDvector">+getX(): number</text>
+<text x="0.0" y="28.5" stroke="none" data-name="TwoDvector">+getY(): number</text>
+<text x="0.0" y="43.5" stroke="none" data-name="TwoDvector">+getNorm(): number</text>
+
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

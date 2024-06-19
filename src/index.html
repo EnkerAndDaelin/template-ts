@@ -6,8 +6,111 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
     <!-- support for mobile touch devices -->
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="https://fonts.cdnfonts.com/css/lcd" rel="stylesheet">
 </head>
 <body>
-    <h1>Title</h1>
+    <h1 style="-webkit-text-stroke-width: 0.0px;
+			   -webkit-text-stroke-color: white;
+			   color: #0049BC;">
+		GE Healthcare Coding Challenge: clocks
+	</h1>
+	<div id="createClockDiv">
+		Offset from UTC:&nbsp
+		<select id="timeZoneHourSelect">
+			<option value="-12">-12</option>
+			<option value="-11">-11</option>
+			<option value="-10">-10</option>
+			<option value="-9">-9</option>
+			<option value="-8">-8</option>
+			<option value="-7">-7</option>
+			<option value="-6">-6</option>
+			<option value="-5">-5</option>
+			<option value="-4">-4</option>
+			<option value="-3">-3</option>
+			<option value="-2">-2</option>
+			<option value="-1">-1</option>
+			<option value="0">±0</option>
+			<option value="1">+1</option>
+			<option value="2">+2</option>
+			<option value="3">+3</option>
+			<option value="4">+4</option>
+			<option value="5">+5</option>
+			<option value="6">+6</option>
+			<option value="7">+7</option>
+			<option value="8">+8</option>
+			<option value="9">+9</option>
+			<option value="10">+10</option>
+			<option value="11">+11</option>
+			<option value="12">+12</option>
+			<option value="13">+13</option>
+			<option value="14">+14</option>
+		</select>&nbsp hours,&nbsp
+		<select id="timeZoneMinuteSelect">
+			<option value="0">00</option>
+			<option value="30">30</option>
+			<option value="45">45</option>
+		</select>&nbsp minutes<br>
+		<br>
+		Animation:&nbsp
+		<select id="animationTypeSelect">
+			<option value="0" selected>None</option>
+			<option value="1">Translation</option>
+			<option value="2">Circular translation</option>
+			<option value="3">Homothety</option>
+			<option value="4">Rotation</option>
+		</select><br>
+		<ul id="animationUl" style="margin: 0px; display: none;">
+			<li id ="animationClockIndexLi">
+				Clock index:&nbsp
+				<select id="animationClockIndexSelect">
+					<option value="-1" selected>New</option>
+				</select>
+			</li>
+			<li id ="animationRelativeToPointLi">
+				Relative to point X:&nbsp
+				<input id="animationRelativeToPointXinput" type="text" size="3" maxlength="4" value="0">
+				&nbsp pixels, Y:&nbsp
+				<input id="animationRelativeToPointYinput" type="text" size="3" maxlength="4" value="0">
+				&nbsp pixels
+			</li>
+			<li>
+				Start
+				<span id="animationStartSpanOne">
+					<label for="animationStartSpanOneInput">X:</label>
+					<input id="animationStartSpanOneInput" type="text" size="3" maxlength="4" value="0">
+					<span>pixels</span>
+				</span>
+				<span id="animationStartSpanTwo">
+					<label for="animationStartSpanTwoInput">, Y:</label>
+					<input id="animationStartSpanTwoInput" type="text" size="3" maxlength="4" value="0">
+					<span>pixels</span>
+				</span>
+			</li>
+			<li>
+				End
+				<span id="animationEndSpanOne">
+					<label for="animationEndSpanOneInput">X:</label>
+					<input id="animationEndSpanOneInput" type="text" size="3" maxlength="4" value="0">
+					<span>pixels</span>
+				</span>
+				<span id="animationEndSpanTwo">
+					<label for="animationEndSpanTwoInput">, Y:</label>
+					<input id="animationEndSpanTwoInput" type="text" size="3" maxlength="4" value="0">
+					<span>pixels</span>
+				</span>
+			</li>
+			<li>
+				<label for="animationTimeOffsetInput">Time offset:</label>
+				<input id="animationTimeOffsetInput" type="text" size="3" maxlength="4" value="0">
+				seconds,
+				<label for="animationTimeDurationInput">duration:</label>
+				<input id="animationTimeDurationInput" type="text" size="3" maxlength="4" value="10">
+				seconds
+			</li>
+		</ul><br>
+		<button id="createClockButton">Create clock</button>
+	</div>
+	<br>
+	<div id="clocksDiv"></div>
 </body>
 </html>
